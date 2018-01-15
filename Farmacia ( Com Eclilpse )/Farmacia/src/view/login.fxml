@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="pagina" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="mainFxmlClass" stylesheets="@../estilo/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaLoginController">
+   <children>
+      <VBox maxHeight="300.0" maxWidth="300.0" prefHeight="284.0" prefWidth="255.0" styleClass="painel" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="painel">
+               <children>
+                  <AnchorPane prefHeight="15.0" prefWidth="300.0" styleClass="painelTopo" />
+                  <Text layoutX="98.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtNome" layoutX="52.0" layoutY="92.0" prefHeight="42.0" prefWidth="197.0" promptText="Usuário" styleClass="usuario" AnchorPane.topAnchor="92.0">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <JFXButton layoutX="52.0" layoutY="206.0" prefHeight="34.0" prefWidth="197.0" styleClass="entrar" text="Entrar">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Text layoutX="46.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Não tem cadastro ?" />
+                  <Text fill="#0a1d9a" layoutX="164.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Cadastre-se">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <PasswordField fx:id="txtSenha" layoutX="52.0" layoutY="148.0" prefHeight="42.0" prefWidth="197.0" promptText="Senha" styleClass="senha" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

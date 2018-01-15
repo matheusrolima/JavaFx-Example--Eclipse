@@ -1,0 +1,29 @@
+.principal{
+	-fx-background-color:#e1dfdf;
+}
+
+.painelTopo{
+    -fx-background-color:#056e9bee;
+    
+}
+
+.botaoHome, .botaoPedido, .botaoContato, .botaoSobre , .botaoEntrar{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #c2c5c6;
+    -fx-font-size:16px;
+}
+
+.botaoHome:hover, .botaoPedido:hover, .botaoContato:hover, .botaoSobre:hover , .botaoEntrar:hover{
+    
+     -fx-background-color:#056e9bee;  
+}
+
+.botaoBuscar{
+	-fx-background-color: gray;
+}
+
+.painelMenu{
+    -fx-background-color:#c2c5c6;
+}

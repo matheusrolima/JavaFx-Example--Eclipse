@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pagina" styleClass="principal" stylesheets="@../estilo/home.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaHomeController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="746.0" styleClass="painelTopo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="59.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farmácia" wrappingWidth="242.13671875" AnchorPane.bottomAnchor="73.640625" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="444.86328125" AnchorPane.topAnchor="72.3125">
+               <font>
+                  <Font name="Poor Richard" size="48.0" />
+               </font>
+            </Text>
+            <MaterialDesignIconView fill="WHITE" glyphName="PLUS" layoutX="14.0" layoutY="117.0" size="46" wrappingWidth="37.0" AnchorPane.bottomAnchor="77.25" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="695.0" AnchorPane.topAnchor="76.75" />
+            <JFXButton layoutX="639.0" layoutY="161.0" prefHeight="25.0" prefWidth="64.0" styleClass="botaoBuscar" text="Buscar" textFill="WHITE" AnchorPane.rightAnchor="43.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <TextField layoutX="479.0" layoutY="161.0" promptText="Buscar" AnchorPane.rightAnchor="118.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="200.0" prefHeight="46.0" prefWidth="746.0" styleClass="painelMenu" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton layoutX="27.0" layoutY="6.0" onAction="#btHome" prefHeight="30.0" prefWidth="102.0" styleClass="botaoHome" text="Home" textFill="WHITE" AnchorPane.leftAnchor="27.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="HOME" size="20" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="139.0" layoutY="6.0" onAction="#btPedido" prefHeight="30.0" prefWidth="102.0" styleClass="botaoPedido" text="Pedido" textFill="WHITE" AnchorPane.leftAnchor="139.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="BACKBURGER" size="20" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="618.0" layoutY="6.0" onAction="#btEntrar" prefHeight="30.0" prefWidth="102.0" styleClass="botaoEntrar" text="Entrar" textFill="WHITE" AnchorPane.rightAnchor="26.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="ARROW_RIGHT_BOLD_CIRCLE" size="20" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <VBox fx:id="conteudoPagina" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="246.0" />
+   </children>
+</AnchorPane>

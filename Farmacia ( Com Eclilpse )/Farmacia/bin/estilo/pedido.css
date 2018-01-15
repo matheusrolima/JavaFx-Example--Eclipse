@@ -1,0 +1,14 @@
+
+.pagina {
+    -fx-background-color:#e1dfdf;
+}
+.tabelaMedicamentos{
+    -fx-font-size: 14px; 
+    
+}
+
+.tabelaMedicamentos:row-selection .table-row-cell:filled:hover {
+    -fx-background-color:#c9c9d1;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
